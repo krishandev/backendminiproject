@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="m-5">
+        <a class="bg-red-300 my-3 p-1 rounded" href="/login">Login</a>
+        <form action="/register" method="post">
+            <h1 class="text-3xl font-bold">Register Form</h1>
+
+            <div class="flex flex-col gap-3 mt-3">
+                <input class="border border-gray-300 p-1 w-64" placeholder="Name" name="name"/>
+                <input class="border border-gray-300 p-1 w-64" placeholder="Username" name="username"/>
+                <input class="border border-gray-300 p-1 w-64" placeholder="email" name="email"/>
+                <input class="border border-gray-300 p-1 w-64" placeholder="password" name="password"/>
+                <input class="border border-gray-300 p-1 w-64" placeholder="age" name="age"/>
+                <button class="border bg-blue-300 border-gray-300 p-1 w-64">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
