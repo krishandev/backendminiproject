@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="border border-red-300 flex flex-col justify-center items-center p-5 gap-3">
+        <h1 class="text-3xl font-bold">Profile Page </h1>
+        <a href="/logout"><button class="bg-red-300 p-1 rounded">Logout</button></a>
+        
+        <h2 class="text-xl">Hello, <span class="font-bold text-green-500"><%=post.user.name%></span></h2>
+        <div>
+            <h3 class="bg-gray-500 text-white p-1 rounded my-3">Edit Your Post </h3>
+            
+        <form action="/edit/<%=post._id %>" method="post" class="gap-3 flex flex-col">
+            
+            <textarea class="border border-gray-300 p-1" placeholder="What's in Your Mind?" name="content"><%=post.content%></textarea>
+            <button class="bg-blue-300">Edit Post</button>
+        </form>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
